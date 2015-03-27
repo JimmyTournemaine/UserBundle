@@ -1,0 +1,15 @@
+<form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="form-horizontal" role="form">
+    
+    {% if form_errors(form) is not empty %}
+    	<div class="alert alert-danger">
+    		{{ form_errors(form) }}
+    	</div>
+    {% endif %}
+    
+	{{ form_widget(form) }}
+	
+    {{ form_rest(form) }}
+    <div>
+        <input type="submit" class="btn btn-success" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+</form>

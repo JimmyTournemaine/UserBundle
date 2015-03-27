@@ -1,0 +1,33 @@
+{% extends "JTUserBundle::layout.html.twig" %}
+
+{% block title %} Connexion {% endblock %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+	{% if error %}
+	    <div class="alert alert-danger">
+	    	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			{{ error.messageKey|trans(error.messageData, 'security') }}
+	    </div>
+	{% endif %}
+	
+	<div class="row">
+	
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+			    	<h3 class="panel-title">Connexion</h3>
+			  	</div>
+			  	<div class="panel-body">
+			    	<div class="col-sm-11">
+			    		{{ include('FOSUserBundle:Security:login_content.html.twig') }}
+			    	</div>
+			  	</div>
+			</div>
+		</div>
+	
+	</div>
+
+{% endblock fos_user_content %}

@@ -1,0 +1,11 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+{% include "FOSUserBundle:Profile:show_content.html.twig" %}
+{% endblock fos_user_content %}
+
+{% block stylesheets %}
+	{% stylesheets '@JTUserBundle/Resources/public/css/profile_show.css' %}
+		<link rel="stylesheet" href="{{ asset_url }}">
+	{% endstylesheets %}
+{% endblock %}

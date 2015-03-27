@@ -1,0 +1,37 @@
+security:
+    login:
+        forgot: Mot de passe oublié ?
+
+profile:
+    show: Mon Compte
+    edit: Modifier mes informations
+    unknown: Non renseigné
+    none: Aucun
+    gender: Genre
+    lastname: Nom
+    firstname: Prénom
+    dateOfBirth: Date de naissance
+    address: Adresse
+    email: Adresse email
+    country: Pays
+    locale: Language
+    timezone: Fuseau Horaire
+    website: Site web
+    biography: Biographie
+    phones:
+        label: Téléphones
+        add: Ajouter un numéro
+        remove: Supprimer ce numéro
+        home: domicile
+        mobile: mobile
+    facebookName: Nom Facebook
+    twitterName: Nom Twitter
+    gplusName: Nom Google+
+
+menu:
+    login: Connexion
+    logout: Déconnexion
+    profile: 
+        header: Mon compte
+        show: Afficher
+        edit: Modifier

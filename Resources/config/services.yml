@@ -1,0 +1,6 @@
+services:
+    jt_user.profile.form.type:
+        class: JT\UserBundle\Form\UserType
+        tags:
+            - { name: form.type, alias: jt_user_profile }
+    

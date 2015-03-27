@@ -1,0 +1,22 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+	
+	<ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="{{ path('fos_user_profile_edit') }}">{{ 'profile.edit'|trans }}</a></li>
+      <li role="presentation"><a href="{{ path('fos_user_change_password') }}">{{ 'change_password.submit'|trans({}, 'FOSUserBundle') }}</a></li>
+    </ul>
+    
+	<h2>{{ 'profile.edit'|trans }}</h2>
+	<hr />
+	{% include "FOSUserBundle:Profile:edit_content.html.twig" %}
+	
+{% endblock fos_user_content %}
+
+{% block stylesheets %}{{ include('JTCommonBundle:datepicker:datepicker-css.html.twig') }}{% endblock %}
+{% block javascripts %}
+	<script src="{{ asset('bundles/mopabootstrap/js/mopabootstrap-collection.js') }}"></script>
+	{% include 'JTCommonBundle:datepicker:datepicker-js.html.twig' 
+		with {'startView':'decade', 'todayBtn':false, 'startDate': '01/01/1900', 'endDate':'now'|date('d/m/Y') } 
+	%}
+{% endblock %}

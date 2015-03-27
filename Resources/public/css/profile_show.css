@@ -1,0 +1,13 @@
+#profileMenu {
+	
+}
+
+#profileMenu .menu {
+	margin-bottom: 1em;
+	padding: 0 10px 1em 10px;
+	border-radius: 10px;
+	border: 1px solid #DDDDDD;
+}
+#profileMenu .menu h4 {
+	text-align: center!important
+}

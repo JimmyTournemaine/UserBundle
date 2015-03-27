@@ -1,0 +1,32 @@
+{
+    "name": "jimmy-tournemaine/user-bundle",
+    "type": "symfony-bundle",
+    "description": "A custom user using UserInterface",
+    "keywords": ["user","user bundle","userbundle"],
+    "homepage": "http://github.com/JimmyTournemaine/UserBundle",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jimmy Tournemaine",
+            "email": "jimmy.tournemaine@yahoo.fr",
+            "homepage": "http://tournemaine.fr",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 5.3.3",
+	"symfony/symfony": "~2.6",
+	"doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+	"symfony/swiftmailer-bundle": "~2.3",
+        "friendsofsymfony/user-bundle": "2.*@dev"
+    },
+    "autoload" : {
+        "psr-0": {
+            "JT\\UserBundle": ""
+        }
+    },
+    "target-dir": "jimmy-tournemaine/user-bundle",
+    "minimum-stability": "dev"
+}
