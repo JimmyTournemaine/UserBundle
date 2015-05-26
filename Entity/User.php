@@ -498,7 +498,7 @@ class User extends BaseUser
         $this->phones = new \Doctrine\Common\Collections\ArrayCollection();
         
         // Si l'utilisateur est activé mais n'a pas encore de ROLE_USER
-        if($this->isEnabled && !(in_array("ROLE_USER", $this->getRoles())))
+        if($this->isEnabled() && !(in_array("ROLE_USER", $this->getRoles())))
         	$this->addRole("ROLE_USER");
     }
 
